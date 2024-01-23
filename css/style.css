@@ -1,0 +1,350 @@
+/* Paleta de colores
+- Spotify:  #1ed760
+- Body: #D6F5CA
+- Titulos: black
+
+*/
+
+.googlefonts{
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+   
+}
+
+/*Aca va todo lo que tiene que ver con Body*/
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid-container{
+    display: grid;
+    background-color: #D6F5CA;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "aside aside aside aside "
+    "footer footer footer footer"
+    ;
+}
+
+header{
+    grid-area: header; 
+}
+
+main{
+    grid-area: main; 
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer; 
+}
+/* - HEADER - Aca va a estar todo lo que sea encabezado */
+
+
+.pasapalabras{
+    height: 30px;
+    background-color: #1ed760;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border: 1px solid #808B96 ;
+    
+ 
+
+}
+
+.fondonav{
+    position: sticky;
+    top: 0;
+    text-decoration: none;
+    background-color: #FDEDEC ;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    /*position: top: 0px;*/
+    height: 10vh;
+    padding-top: 02%;
+
+}
+
+
+/*.enlace-inicio{ 
+    text-decoration: none;
+    color: black;
+}
+.enlace-inicio:hover {
+    text-decoration: none;
+    color: rgb(145, 61, 61);
+
+}
+.enlace-productos{ 
+    text-decoration: none;
+    color: black;
+}
+.enlace-productos:hover {
+    text-decoration: none;
+    color: rgb(145, 61, 61);
+
+}
+.enlace-music{ 
+    text-decoration: none;
+    color: black;
+}
+.enlace-music:hover {
+    text-decoration: none;
+    color: rgb(145, 61, 61);
+
+}
+.enlace-tutoriales{ 
+    text-decoration: none;
+    color: black;
+}
+.enlace-tutoriales:hover {
+    text-decoration: none;
+    color: rgb(145, 61, 61);
+
+}
+.enlace-faq{ 
+    text-decoration: none;
+    color: black;
+}
+.enlace-faq:hover {
+    text-decoration: none;
+    color: rgb(145, 61, 61);
+
+}*/
+
+.carousel-inner{
+    display: flex;
+    max-width: 100%;
+    height: 500px;
+    margin: auto; 
+}
+
+
+    
+header nav ul li {
+    float: left;
+}
+header nav ul li {
+    list-style: none;
+}
+
+
+
+.textodelvideo {
+   
+    display: flex;
+    margin-right: 50px;
+}
+
+/*Esto es Boostrap*/
+
+
+
+/*esto sirve para agregar un contenedor y modificarlo al ancho de la pagina*/
+
+.cont-img-music{
+
+    width: 100%;
+   
+}
+
+/* - ASIDE -*/
+
+.carta-container{
+    
+    color: rgb(5, 8, 10);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.nuestros-productos{
+    text-align: center;
+}
+
+.fotos-galeria-section{
+    display: flex;
+    justify-content: center;
+
+}
+
+.fotos-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* -MAIN - */
+
+.promos-container{
+   
+    background-color: rgb(182, 235, 185);
+    color: rgb(0, 0, 0);
+    display: flex; 
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.promos-textos{
+    justify-content: space-evenly;
+    display: flex; 
+}
+
+.videopr-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 05px;
+    
+}
+
+.video-container{
+    justify-content: center;
+    flex: 1;
+   
+}
+
+.bienvenidos-container{
+    flex: 1;
+    padding-top: 70px;
+    justify-content: center;
+    text-align: center;
+  
+    
+    
+}
+
+/*Main del faq*/
+.faq-acordeon{
+    margin: 20px;
+}
+
+
+/* - FOOTER - */
+
+.section-redes {
+    background-color: #D6F5CA;
+   
+   
+
+}
+
+.contactanos{
+  
+    text-align: center;
+    border-top: 1px ridge rgb(16, 107, 69);
+    background-color: #D6F5CA;
+    
+
+    
+}
+
+.logo-redes {
+    justify-content: space-evenly;
+    height: 13svh;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* MEDIA QUERIE*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .grid-container {
+    background-color: #F2D7D5;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-areas: 
+    "header header "
+    "main main "
+    "aside aside "
+    "footer footer "
+    ;
+}
+
+.bienvenidos-container{
+    padding-top: 5px;
+    justify-content: center;
+    text-align: center ;
+}
+
+.videopr-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+
+/*MOBILE*/
+@media (min-width: 320px) and (max-width: 600px) {
+    .fondonav{
+        position: sticky;
+        top: 0;
+        background-color: #FDEDEC ;
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 10vh;
+        padding-top: 02%;
+    
+    }
+
+    .action{
+        display: none;
+    }
+
+    .grid-container {
+        background-color: #f8bfe5;   
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+        grid-template-areas: 
+        "header header "
+        "main main "
+        "aside aside "
+        "footer footer "
+        ;
+    }
+    
+    .bienvenidos-container{
+        padding-top: 5px;
+        justify-content: center;
+        text-align: center ;
+    }
+    .videopr-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .video-container{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        flex-wrap: wrap;
+        max-width: 100%; 
+        max-height: 100vh;
+
+    }
+    
+    
+
+}
