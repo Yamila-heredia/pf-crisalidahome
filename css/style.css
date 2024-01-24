@@ -34,7 +34,35 @@
     "footer footer footer footer"
     ;
 }
+.grid-container-music{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: #dad1f5;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "aside aside aside aside "
+    "footer footer footer footer"
+    ;
 
+}
+.grid-container-tutoriales{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(203, 72%, 89%);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "aside aside aside aside "
+    "footer footer footer footer"
+    ;
+}
 header{
     grid-area: header; 
 }
@@ -80,47 +108,12 @@ footer{
 }
 
 
-/*.enlace-inicio{ 
+/* ESTO ES PARA CAMBIAR DE COLOR CADA VEZ QUE SE POSICIONA SOBRE EL TEXTO
+.enlace-inicio{ 
     text-decoration: none;
     color: black;
 }
 .enlace-inicio:hover {
-    text-decoration: none;
-    color: rgb(145, 61, 61);
-
-}
-.enlace-productos{ 
-    text-decoration: none;
-    color: black;
-}
-.enlace-productos:hover {
-    text-decoration: none;
-    color: rgb(145, 61, 61);
-
-}
-.enlace-music{ 
-    text-decoration: none;
-    color: black;
-}
-.enlace-music:hover {
-    text-decoration: none;
-    color: rgb(145, 61, 61);
-
-}
-.enlace-tutoriales{ 
-    text-decoration: none;
-    color: black;
-}
-.enlace-tutoriales:hover {
-    text-decoration: none;
-    color: rgb(145, 61, 61);
-
-}
-.enlace-faq{ 
-    text-decoration: none;
-    color: black;
-}
-.enlace-faq:hover {
     text-decoration: none;
     color: rgb(145, 61, 61);
 
@@ -131,10 +124,7 @@ footer{
     max-width: 100%;
     height: 500px;
     margin: auto; 
-}
-
-
-    
+} 
 header nav ul li {
     float: left;
 }
@@ -153,14 +143,6 @@ header nav ul li {
 /*Esto es Boostrap*/
 
 
-
-/*esto sirve para agregar un contenedor y modificarlo al ancho de la pagina*/
-
-.cont-img-music{
-
-    width: 100%;
-   
-}
 
 /* - ASIDE -*/
 
@@ -228,6 +210,18 @@ header nav ul li {
   
     
     
+    
+}
+.spotify-container{
+    margin: 5px;
+}
+.cont-img-music{
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+   
+
+    
 }
 
 /*Main del faq*/
@@ -244,15 +238,20 @@ header nav ul li {
    
 
 }
+.logo-redes-music{
+    background-color: #dad1f5;
+}
 
 .contactanos{
-  
     text-align: center;
     border-top: 1px ridge rgb(16, 107, 69);
     background-color: #D6F5CA;
-    
-
-    
+}
+.contactanos-container{
+    background-color: #D6F5CA;
+}
+.contactanos-container-productos{
+    background-color: hsl(204, 16%, 65%);
 }
 
 .logo-redes {
@@ -265,6 +264,7 @@ header nav ul li {
 
 /* MEDIA QUERIE*/
 
+/*TABLET*/
 @media (min-width: 768px) and (max-width: 1200px) {
     .grid-container {
     background-color: #F2D7D5;   
@@ -284,13 +284,32 @@ header nav ul li {
     justify-content: center;
     text-align: center ;
 }
-
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    
+    max-width: 50%; 
+    max-height: auto;
+}
 .videopr-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+.contatanos-container{
+    background-color: #F2D7D5;
+    display: flex;
+
 }
+.section-redes{
+    background-color:  #F2D7D5;
+
+
+}
+
+}
+
 
 /*MOBILE*/
 @media (min-width: 320px) and (max-width: 600px) {
@@ -304,7 +323,6 @@ header nav ul li {
         flex-wrap: wrap;
         height: 10vh;
         padding-top: 02%;
-    
     }
 
     .action{
@@ -312,10 +330,10 @@ header nav ul li {
     }
 
     .grid-container {
-        background-color: #f8bfe5;   
+        background-color: #fad8ee;   
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+        grid-template-rows: 0,5fr 0,2fr 0,1fr 1fr;
         grid-template-areas: 
         "header header "
         "main main "
@@ -323,7 +341,11 @@ header nav ul li {
         "footer footer "
         ;
     }
-    
+    .carrusel-conteiner{
+        display: flex;
+        justify-content: center;
+    }
+  
     .bienvenidos-container{
         padding-top: 5px;
         justify-content: center;
@@ -344,7 +366,10 @@ header nav ul li {
         max-height: 100vh;
 
     }
+    .section-redes{
+        background-color:  #fad8ee;
     
     
+    }
 
 }
