@@ -1,0 +1,109 @@
+//TABLET
+@media (min-width: 768px) and (max-width: 1200px) {
+    .grid-container {
+    background-color: $color-primario2;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "header header "
+    "main main "
+    "aside aside "
+    "footer footer "
+    ;
+}
+
+.bienvenidos-container{
+    padding: 3px;
+    justify-content: center;
+    text-align: center ;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    max-width: 50%; 
+    max-height: auto;
+}
+.videopr-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactanos{
+    text-align: center;
+    border-top: 1px ridge #963c3c;
+    background-color: $color-primario2;
+
+    .container{
+    background-color: $color-primario2;
+    display: flex;
+}
+}
+.section-redes{
+    background-color:  $color-primario2;
+}
+}
+
+//MOBILE
+@media (min-width: 320px) and (max-width: 600px) {
+    .fondonav{
+        position: sticky;
+        top: 0;
+        background-color: #FDEDEC ;
+        color: $color-black;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 10vh;
+        padding-top: 02%;
+    }
+
+    .action{
+        display: none;
+    }
+
+    .grid-container {
+        background-color: $color-primario2;   
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0,5fr 0,2fr 0,1fr 1fr;
+        grid-template-areas: 
+        "header header "
+        "main main "
+        "aside aside "
+        "footer footer "
+        ;
+    }
+    .carrusel-conteiner{
+        display: flex;
+        justify-content: center;
+    }
+  
+    .bienvenidos-container{
+        padding-top: 5px;
+        justify-content: center;
+        text-align: center ;
+    }
+    .videopr-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .container{
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            flex-wrap: wrap;
+            max-width: 100%; 
+            max-height: 100vh;
+        }
+    }
+      
+    .section-redes{
+        background-color:  $color-primario2;
+    }
+
+}

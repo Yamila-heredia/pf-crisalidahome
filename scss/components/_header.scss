@@ -1,0 +1,32 @@
+header{
+    grid-area: header; 
+}
+.pasapalabras{
+    height: 30px;
+    background-color: #1ed760;
+    color: $color-black;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #808B96 ;
+    
+ 
+
+}
+
+.fondonav{
+    position: sticky;
+    top: 0;
+    text-decoration: none;
+    color: $color-black;
+    display: flex;
+    justify-content: space-evenly;
+    /*position: top: 0px;*/
+    height: 10vh;
+    padding-top: 02%;
+
+}
+header nav ul li {
+    float: left;
+    list-style: none;
+}
+

@@ -1,0 +1,44 @@
+.grid-container{
+    display: grid;
+    background-color: $color-primario1;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "aside aside aside aside "
+    "footer footer footer footer"
+    ;
+}
+.grid-container-music{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: $color-primario3;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "aside aside aside aside "
+    "footer footer footer footer"
+    ;
+
+}
+.grid-container-tutoriales{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: $color-primario4;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "aside aside aside aside "
+    "footer footer footer footer"
+    ;
+}
+
+
+

@@ -1,0 +1,64 @@
+main{
+    grid-area: main; 
+}
+.carousel-inner{
+    display: flex;
+    max-width: 100%;
+    height: 500px;
+    margin: auto; 
+} 
+
+.textodelvideo{
+    display: flex;
+    margin-right: 50px;
+}
+
+.promos-container{
+   
+    background-color: #b6ebb9;
+    color: $color-black;
+    display: flex; 
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.promos-textos{
+    justify-content: space-evenly;
+    display: flex; 
+}
+
+.videopr-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+
+    .video-container{
+        justify-content: center;
+        flex: 1;
+    }
+    .bienvenidos-container{
+        flex: 1;
+        padding-top: 60px;
+        padding-left: 01px;
+        padding-right: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+//Main de music
+.cont-img-music{
+    margin: 1px;
+    display: flex;
+    justify-content: center;   
+}
+.spotify-container{
+    margin: 5px;
+}
+
+
+//Main del faq
+.faq-acordeon{
+    margin: 20px;
+}

@@ -1,0 +1,35 @@
+footer{
+    grid-area: footer; 
+}
+
+.section-redes {
+    background-color: $color-primario1;   
+}
+
+.logo-redes-music{
+    background-color: $color-primario3;
+}
+
+.contactanos{
+    text-align: center;
+    font-family: $font-title-principal;
+    border-top: 1px ridge rgb(16, 107, 69);
+    background-color: $color-primario1;
+}
+
+.contactanos-container{
+    background-color: $color-primario1;
+}
+
+.contactanos-container-productos{
+    background-color: hsl(204, 16%, 65%);
+    font-size: 40px;
+}
+
+.logo-redes {
+    justify-content: space-evenly;
+    height: 13svh;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
