@@ -16,11 +16,12 @@ header{
 .fondonav{
     position: sticky;
     top: 0;
+    font-family: $font-body;
+    font-size: 18px;
     text-decoration: none;
     color: $color-black;
     display: flex;
     justify-content: space-evenly;
-    /*position: top: 0px;*/
     height: 10vh;
     padding-top: 02%;
 

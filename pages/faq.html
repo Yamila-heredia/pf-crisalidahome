@@ -7,11 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Libre+Baskerville&family=Open+Sans:wght@300&family=Prompt:wght@600;800&display=swap" rel="stylesheet">
+    <!--Font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Bebas+Neue&family=Bowlby+One&family=Kaushan+Script&family=Libre+Baskerville&family=Open+Sans:wght@300&family=Prompt:wght@600;800&display=swap" rel="stylesheet">
     
     <!---BS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!---conecta con CSS-->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!--Libreria animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    
     <title>CrisalidaHome</title>
     <meta charset="UTF-8">
@@ -22,157 +29,207 @@
 
 <body>
     <!--- Este es el menu de navegación --->
+    <div class="grid-container">
+        <header >
+            <section class="pasapalabras">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                <span class="material-symbols-outlined">
+                    volume_up
+                </span>
+                <div>¡Activa tu mood con nuestra playlist en Spotify! </div> 
+            </section>
 
-    <header >
-        <section class="pasapalabras">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-            <span class="material-symbols-outlined">
-                volume_up
-            </span>
-            <div>¡Activa tu mood con nuestra playlist en Spotify! </div> 
-        </section>
-
-        <div class="navegador-container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="#">Crisalidahome</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/productos.html">Plantines</a></li>
-                                <li><a class="dropdown-item" href="../pages/plantasinterior.html">Plantas interior</a></li>
-                                <li><a class="dropdown-item" href="../pages/quinta.html">Quinta</a></li>
+            <div class="navegador-container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Crisalidahome</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../pages/plantines.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/plantines.html">Plantines</a></li>
+                                    <li><a class="dropdown-item" href="../pages/plantasinterior.html">Plantas interior</a></li>
+                                    <li><a class="dropdown-item" href="../pages/quinta.html">Quinta</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/tutoriales.html">Tutoriales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/music.html">Music</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/faq.html">FAQ</a>
+                            </li>
+                            
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/tutoriales.html">Tutoriales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/music.html">Music</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/faq.html">FAQ</a>
-                        </li>
-                        
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
 
-    </header>
+        </header>
 
-    <main>
-        <div>
-            <img src="../assets/portadafaq.jpg" alt="encabezado CrisalidaHome" width="1500" height="350">
-        </div>
-        
-        <div class="container-fluid">
-            <h1>PREGUNTAS FRECUENTES</h1>
-
-            <p>Bienvenido a nuestra sección de Preguntas Frecuentes. Aquí encontrarás respuestas a las preguntas más comunes que nuestros usuarios suelen hacer.</p>
-        </div>
+        <main>
+            <div>
+                <img src="../assets/portadafaq.jpg" alt="encabezado CrisalidaHome" width="1500" height="350">
+            </div>
             
+            <div class="container-fluid">
+                <h1>PREGUNTAS FRECUENTES</h1>
+
+                <p>Bienvenido a nuestra sección de Preguntas Frecuentes. Aquí encontrarás respuestas a las preguntas más comunes que nuestros usuarios suelen hacer.</p>
+            </div>
+                
 
 
-        <div class="faq-acordeon">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    ¿Quienes somos / qué es CrisalidaHome?
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="faq-acordeon">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            ¿Quienes somos / qué es CrisalidaHome?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                            <strong>Te compartimos un poquito de nosotros.</strong> Hace varios años, la semilla de Crisalida fue plantada por Micaela y Darío. Su amor compartido por las plantas, especialmente las suculentas que dieron origen al vivero, se ha convertido en la fuerza impulsora detrás de este creciente proyecto. Su dedicación se refleja en cada planta que encuentras en nuestro vivero.
+
+                            Más que Propietarios, Somos Apasionados Cuidadores
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Nuestros comienzos
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Nuestros comienzos
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <strong>En Crisalidahome, nos enorgullece contar nuestra historia.</strong> Una historia que comenzó como un pequeño emprendimiento dedicado a las suculentas y que ha florecido en un oasis de naturaleza para todos nuestros amantes de las plantas. Todo comenzó con la pasión por las suculentas, esas plantas fascinantes y resilientes que robaron nuestro corazón. Lo que comenzó como una colección personal pronto se convirtió en un pequeño vivero, con el deseo de compartir la belleza y la diversidad de estas plantas únicas con la comunidad.
+
+                            A medida que crecimos, también lo hizo nuestro vivero. Hoy en día, Crisalidahome es un espacio lleno de vida, ofreciendo no solo suculentas sino una amplia variedad de plantas de interior y de jardín. Nos enorgullece ser parte de la comunidad y contribuir al amor por la naturaleza en cada rincón de nuestros hogares. Cada planta en nuestro vivero lleva consigo la esencia de nuestros modestos comienzos, recordándonos de dónde venimos y lo lejos que hemos llegado. Estamos agradecidos por cada paso en este viaje, y esperamos que tú también te sumes a esta historia en crecimiento.
+
+                            Ven y únete a nosotros en [Nombre del Vivero], donde la pasión por las plantas comenzó con pequeñas suculentas y se ha convertido en un vibrante vivero que te invita a explorar, aprender y llevar a casa un pedacito de nuestro amor por la naturaleza.
+                            
+                            ¡Gracias por ser parte de nuestra historia en Crisalidahome!
+                            </div>
+                        </div>
                     </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Objetivos
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Horarios de atención
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <strong>Te invitamos a visitarnos en los siguientes horarios.</strong> Horario Matutino:
+                            Desde las 8:00 AM hasta las 12:00 PM, nuestras puertas están abiertas para recibirte. Comienza tu día explorando nuestra amplia variedad de plantas y descubre cómo puedes llevar la frescura a tu hogar.
+                            
+                            Horario Vespertino:
+                            Por la tarde, volvemos a abrir nuestras puertas para ti. De 17:00 a 20:30, tendrás la oportunidad de explorar nuestro vivero y recibir asesoramiento personalizado para tus proyectos de jardinería.
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            ¿Dónde encontrarnos?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <strong>¡Vení a visitarnos!</strong> Descubrí la belleza natural que tenemos para vos en Bs 9 de Julio 892, General Deheza, Córdoba. Te esperamos con una amplia selección de plantas, asesoramiento experto y la atención cálida que nos caracteriza.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Objetivos
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <strong> Nuestro compromiso es embellecer tu vida mediante la oferta de plantas de alta calidad y servicios excepcionales.</strong> ✨ Transformar tu espacio: Creemos que la naturaleza tiene el poder de mejorar tu entorno. Queremos ayudarte a crear un espacio verde y vibrante donde puedas relajarte y disfrutar.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Envios
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                            <strong>Nuestro compromiso con la satisfacción del cliente se refleja en la rapidez y seguridad de nuestros envíos.</strong> Trabajamos con servicios de mensajería de confianza para garantizar que tus plantas lleguen a tu puerta en perfecto estado. Cada planta se empaqueta cuidadosamente para mantener su frescura y vitalidad durante el transporte.Para cubrir los gastos asociados con los envíos a toda la región, hemos establecido un costo adicional que se añadirá a tu compra durante el proceso de pago.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-              
-    </main>
-
-    <aside>
-      
-
-    </aside>
-
-
-
-    <footer>
-            <p class="contactanos">
-                <h2>CONTACTANOS</h2>
-            </p>
-
-            <Section class="section-redes">
-
-                <div class="logo-redes">
-
-                    <div>
-                        <img src="../assets/logowpp.png" alt="Logo de Whatsapp" style="width: 60px ">
-                    
-                    </div>
-                    <div>
-                        <img src="../assets/logoinst.png" alt="Logo de Instagram" style="width: 60px ">
-                    
-                    </div>
-
-                    <div>
-                        <img src="../assets/logoface.png" alt="Logo de Facebook" style="width: 60px ">
-                    
-                    </div>
-
-                </div>
-
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.212171684894!2d-63.79387188848811!3d-32.760104273560856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdc78fb336f87f%3A0x737f574cae3d886d!2sCrisalida!5e0!3m2!1ses!2sar!4v1702300958601!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
-            
-                </div>
                 
-            </Section>
-                
-    </footer>
+        </main>
 
+        <aside>
+        
+
+        </aside>
+
+
+
+        <footer>
+            <div class="contatanos-container">
+                <p class="contactanos">
+                    <h2>CONTACTANOS</h2>
+                </p>
+
+                <Section class="section-redes">
+
+                    <div class="logo-redes">
+
+                        <a href="https://wa.me/c/5493585164101">
+                            <img src="../assets/logowpp.png" alt="Logo de Whatsapp" style="width: 60px ">
+                        
+                        </a>
+                        <a href="//www.instagram.com/crisalidahome/?igsh=MXZidmZ3NGcydWc0bg%3D%3D>">
+                            <img src="../assets/logoinst.png" alt="Logo de Instagram" style="width: 60px ">
+                        
+                        </a>
+
+                        <a href="https://www.facebook.com/crisalidahomeydeco?mibextid=ZbWKwL">
+                            <img src="../assets/logoface.png" alt="Logo de Facebook" style="width: 60px ">
+                        
+                        </a>
+
+                    </div>
+
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.212171684894!2d-63.79387188848811!3d-32.760104273560856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdc78fb336f87f%3A0x737f574cae3d886d!2sCrisalida!5e0!3m2!1ses!2sar!4v1702300958601!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                
+                    </div>
+                    
+                </Section>
+            </div>
+        
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 

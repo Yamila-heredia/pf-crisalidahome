@@ -25,5 +25,25 @@ $colors: (
     secundario: #051661,
 );
 
+$ren:(
+    w: 1rem,
+    h: 500px,
+    pt: 5rem,
+    mt: 5rem,
+
+);
+
+//nombretalle talle
+@each $nombretalle, $talle in $ren {
+    .txt-#{$nombretalle}{
+        font-size: $talle;
+
+    }
+}
+
+
+
+
+
 
 

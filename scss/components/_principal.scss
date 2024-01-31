@@ -62,3 +62,19 @@ main{
 .faq-acordeon{
     margin: 20px;
 }
+
+//main de quinta
+.contenedor-imagen {
+    display: flex;
+
+}
+.imagenquinta {
+    overflow: hidden; 
+    width: 200px; 
+    height: 150px; 
+    margin: 10px; 
+    position: relative;
+}
+.imagenquinta {
+    transform: scale(1.2); /* Aplica un zoom del 20% cuando el usuario pasa el ratón sobre la imagen */
+}

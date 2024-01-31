@@ -2,7 +2,7 @@
 - Spotify:  #1ed760
 - Body: #D6F5CA
 - Titulos: black
-
+-  font-family: 'Afacad', sans-serif;
 */
 
 .googlefonts{
@@ -70,6 +70,21 @@
     "footer footer footer footer"
     ;
 }
+.grid-container-plantines{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    font-family:  'Afacad', sans-serif;
+    background-color: #cdf5d4;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "aside aside aside aside "
+    "footer footer footer footer"
+}
+
 header{
     grid-area: header; 
 }
@@ -85,6 +100,7 @@ aside{
 footer{
     grid-area: footer; 
 }
+
 /* - HEADER - Aca va a estar todo lo que sea encabezado */
 
 
@@ -95,9 +111,6 @@ footer{
     display: flex;
     justify-content: center;
     border: 1px solid #808B96 ;
-    
- 
-
 }
 
 .fondonav{
@@ -108,23 +121,23 @@ footer{
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-evenly;
-    /*position: top: 0px;*/
     height: 10vh;
     padding-top: 02%;
-
 }
 
 
-/* ESTO ES PARA CAMBIAR DE COLOR CADA VEZ QUE SE POSICIONA SOBRE EL TEXTO
-.enlace-inicio{ 
+/* ESTO ES PARA CAMBIAR DE COLOR CADA VEZ QUE SE POSICIONA SOBRE EL TEXTO*/
+
+.navegador-container-nombres{
     text-decoration: none;
     color: black;
 }
-.enlace-inicio:hover {
-    text-decoration: none;
-    color: rgb(145, 61, 61);
 
-}*/
+.navegador-container-nombres:hover {
+        text-decoration: none;
+        color: rgb(145, 61, 61);
+    
+}
 
 header nav ul li {
     float: left;
@@ -228,10 +241,7 @@ header nav ul li {
 .cont-img-music{
     margin: 1px;
     display: flex;
-    justify-content: center;
-   
-
-    
+    justify-content: center;    
 }
 
 /*Main del faq*/
@@ -239,13 +249,8 @@ header nav ul li {
     margin: 20px;
 }
 
-
 /* - FOOTER - */
 
-.section-redes {
-    background-color: #D6F5CA;
-   
-}
 .logo-redes-music{
     background-color: #dad1f5;
 }
@@ -255,11 +260,12 @@ header nav ul li {
     border-top: 1px ridge rgb(16, 107, 69);
     background-color: #D6F5CA;
 }
-.contactanos-container{
-    background-color: hwb(103 79% 4%);
+
+.contactanos-container-music{
+    background-color: #dad1f5;
 }
 .contactanos-container-productos{
-    background-color: hsl(204, 16%, 65%);
+    background-color: hsl(203, 72%, 89%);
 }
 
 .logo-redes {
