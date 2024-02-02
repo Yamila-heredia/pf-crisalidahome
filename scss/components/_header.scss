@@ -1,6 +1,7 @@
 header{
     grid-area: header; 
 }
+
 .pasapalabras{
     height: 30px;
     background-color: #1ed760;
@@ -8,8 +9,22 @@ header{
     display: flex;
     justify-content: center;
     border: 1px solid #808B96 ;
-    
+
+}
+
+.animacion-spotify{
+    animation-name: spotmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: linear;
  
+}
+
+.transform--translate{
+    transform: translate(10px 20px);
+    transition-duration: 5s;
+    transition-delay: 1s;
 
 }
 
@@ -17,7 +32,7 @@ header{
     position: sticky;
     top: 0;
     font-family: $font-body;
-    font-size: 18px;
+    font-size: $px-body;
     text-decoration: none;
     color: $color-black;
     display: flex;
@@ -26,8 +41,47 @@ header{
     padding-top: 02%;
 
 }
+
 header nav ul li {
     float: left;
+}
+header nav ul li {
     list-style: none;
 }
+.nav-item{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:hover {
+        text-decoration: none;
+        color: rgb(250, 255, 110);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

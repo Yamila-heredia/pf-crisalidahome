@@ -1,6 +1,6 @@
 .grid-container{
     display: grid;
-    background-color: hsl(103, 68%, 88%);
+    background-color: $color-primario1;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
     grid-template-areas: 
@@ -11,26 +11,11 @@
     ;
   }
 
-.grid-container-music{
-  display: grid;
-  margin: 0;
-  padding: 0;
-  background-color: #dad1f5;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
-  grid-template-areas: 
-  "header header header header"
-  "main main main main"
-  "aside aside aside aside "
-  "footer footer footer footer"
-  ;
-
-}
-.grid-container-tutoriales{
+ .grid-container-plantines{
     display: grid;
-    margin: 0;
-    padding: 0;
-    background-color: hsl(203, 72%, 89%);
+    font-family: $font-body;
+    font-size: 18px;
+    background-color: $color-primario3;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
     grid-template-areas: 
@@ -39,23 +24,82 @@
     "aside aside aside aside "
     "footer footer footer footer"
     ;
- }
- .grid-container-plantines{
-    display: grid;
-    margin: 0;
-    padding: 0;
-    font-family:  'Afacad', sans-serif;
-    background-color: #cdf5d4;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "aside aside aside aside "
-    "footer footer footer footer"
+    .section-redes{
+      background-color: $color-primario3;
+    }
 }
 
+.grid-container-plantasinterior{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  background-color: $color-primario3;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+  grid-template-areas: 
+  "header header header header"
+  "main main main main"
+  "aside aside aside aside "
+  "footer footer footer footer"
+  ;
+  .section-redes{
+    background-color: $color-primario3;
+  }
   
+}
+
+.grid-container-quinta{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  background-color: $color-primario3;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+  grid-template-areas: 
+  "header header header header"
+  "main main main main"
+  "aside aside aside aside "
+  "footer footer footer footer"
+  ;
+}
+
+.grid-container-tutoriales{
+  display: grid;
+  background-color: $color-primario3;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+  grid-template-areas: 
+  "header header header header"
+  "main main main main"
+  "aside aside aside aside "
+  "footer footer footer footer"
+  ;
+}
+.grid-container-music{
+  display: grid;
+  background-color: $color-primario3;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+  grid-template-areas: 
+  "header header header header"
+  "main main main main"
+  "aside aside aside aside "
+  "footer footer footer footer"
+  ;
+}
+
+.grid-container-faq{
+  display: grid;
+  background-color: $color-primario3;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+  grid-template-areas: 
+  "header header header header"
+  "main main main main"
+  "aside aside aside aside "
+  "footer footer footer footer"
+  ;
+}
 
 
 

@@ -60,7 +60,7 @@
     display: grid;
     margin: 0;
     padding: 0;
-    background-color: hsl(203, 72%, 89%);
+    background-color: hsl(0, 0%, 0%);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
     grid-template-areas: 
@@ -157,11 +157,6 @@ header nav ul li {
 } 
 
 
-.textodelvideo {
-   
-    display: flex;
-    margin-right: 50px;
-}
 
 /*Esto es Boostrap*/
 

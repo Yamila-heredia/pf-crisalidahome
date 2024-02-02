@@ -1,5 +1,5 @@
 //TABLET
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px){
     .grid-container {
     background-color: $color-primario2;   
     display: grid;
@@ -13,20 +13,20 @@
     ;
 }
 
-.bienvenidos-container{
+.video-texto{
     padding: 3px;
     justify-content: center;
     text-align: center ;
 }
 
-.video-container{
+.video-inicio{
     display: flex;
     justify-content: center;
     flex: 1;
     max-width: 50%; 
     max-height: auto;
 }
-.videopr-container{
+.video-principal-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -42,11 +42,7 @@
     display: flex;
 }
 }
-.section-redes{
-    background-color:  $color-primario2;
 }
-}
-
 //MOBILE
 @media (min-width: 320px) and (max-width: 600px) {
     .fondonav{
@@ -87,12 +83,12 @@
         justify-content: center;
         text-align: center ;
     }
-    .videopr-container{
+    .video-principal-container{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
 
-        .container{
+        .video-inicio{
             display: flex;
             justify-content: center;
             flex: 1;

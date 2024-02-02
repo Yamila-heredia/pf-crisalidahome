@@ -12,14 +12,17 @@ aside{
     text-align: center;
 }
 
-.fotos-galeria-section{
+.section-galeria-fotos{
     display: flex;
     justify-content: center;
+    margin: 10px;
+
+.galeria-fotos{
+            display: inline-block;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+}
 }
 
-.fotos-galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
+

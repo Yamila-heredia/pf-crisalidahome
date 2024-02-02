@@ -7,12 +7,6 @@ main{
     height: 500px;
     margin: auto; 
 } 
-
-.textodelvideo{
-    display: flex;
-    margin-right: 50px;
-}
-
 .promos-container{
    
     background-color: #b6ebb9;
@@ -21,23 +15,21 @@ main{
     justify-content: space-evenly;
     width: 100%;
 }
-
 .promos-textos{
     justify-content: space-evenly;
     display: flex; 
 }
-
-.videopr-container{
+.video-principal-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px;
 
-    .video-container{
+    .video-inicio{
         justify-content: center;
         flex: 1;
     }
-    .bienvenidos-container{
+    .video-texto{
         flex: 1;
         padding-top: 60px;
         padding-left: 01px;
@@ -48,13 +40,20 @@ main{
 }
 
 //Main de music
+
 .cont-img-music{
-    margin: 1px;
     display: flex;
-    justify-content: center;   
+    justify-content: center; 
+    margin: 1px;  
 }
+    
+
+
+
+
 .spotify-container{
-    margin: 5px;
+    @include display-a;
+    padding-top: 10px;
 }
 
 
@@ -64,17 +63,17 @@ main{
 }
 
 //main de quinta
-.contenedor-imagen {
+
+.section-tarjetas-huerta{
     display: flex;
 
+    .card{   
+    display: inline-block;
+    margin: 10px;
+    margin-right: 5px;
+} 
 }
-.imagenquinta {
-    overflow: hidden; 
-    width: 200px; 
-    height: 150px; 
-    margin: 10px; 
-    position: relative;
-}
-.imagenquinta {
-    transform: scale(1.2); /* Aplica un zoom del 20% cuando el usuario pasa el ratón sobre la imagen */
-}
+
+
+
+
