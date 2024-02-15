@@ -1,5 +1,5 @@
 main{
-    grid-area: main; 
+    grid-area: a; 
 }
 .carousel-inner{
     display: flex;
@@ -8,7 +8,6 @@ main{
     margin: auto; 
 } 
 .promos-container{
-   
     background-color: #b6ebb9;
     color: $color-black;
     display: flex; 
@@ -19,6 +18,7 @@ main{
     justify-content: space-evenly;
     display: flex; 
 }
+
 .video-principal-container{
     display: flex;
     justify-content: center;
@@ -26,10 +26,12 @@ main{
     margin: 10px;
 
     .video-inicio{
+        margin-left: 15px;
         justify-content: center;
         flex: 1;
     }
     .video-texto{
+        
         flex: 1;
         padding-top: 60px;
         padding-left: 01px;
@@ -37,6 +39,31 @@ main{
         justify-content: center;
         text-align: center;
     }
+}
+//Main plantines
+
+.plantines-contenedor1{
+    display: flex;
+}
+
+ //Main tutoriales
+.cont-img-tutoriales{
+    display: flex;
+    width: 100%;
+}
+
+ .tutoriales-videos1{
+    display: inline-block;
+ }
+.tutoriales-videos2{
+    display: inline-block;
+    
+}
+.tutoriales-videos3{
+    display: inline-block;
+}
+.tutoriales-videos4{
+    display: inline-block;
 }
 
 //Main de music
@@ -46,18 +73,42 @@ main{
     justify-content: center; 
     margin: 1px;  
 }
-    
-
-
-
-
 .spotify-container{
-    @include display-a;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #bed4e8;
+    color: #fff;
+    padding: 10px;
     padding-top: 10px;
 }
 
 
 //Main del faq
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container-fluid{
+   
+    text-align: center;
+
+    .clas-faq-title{
+
+        text-align: center;
+        margin: 0px;
+    
+        .guion{
+            margin: 0 auto;
+            max-width: 5%; 
+            height: auto;
+            text-align: center;
+        }
+    }
+}
+
 .faq-acordeon{
     margin: 20px;
 }

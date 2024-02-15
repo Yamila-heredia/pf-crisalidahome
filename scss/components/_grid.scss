@@ -1,31 +1,47 @@
-.grid-container{
-    display: grid;
+.grid-container main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     background-color: $color-primario1;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 1.1fr;
     grid-template-areas: 
     "header header header header"
     "main main main main"
-    "aside aside aside aside "
+    "aside aside aside aside"
     "footer footer footer footer"
     ;
+    .container-fluid{
+      text-align: center;
+    }
   }
+    
+  
 
  .grid-container-plantines{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     font-family: $font-body;
     font-size: 18px;
-    background-color: $color-primario3;
+    background-color: $color-primario1;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 1.1fr;
     grid-template-areas: 
     "header header header header"
     "main main main main"
-    "aside aside aside aside "
+    "aside aside aside aside"
     "footer footer footer footer"
     ;
+    .container-fluid{
+      text-align: center;
+    }
     .section-redes{
-      background-color: $color-primario3;
+      background-color: $color-primario1;
     }
 }
 
@@ -39,7 +55,7 @@
   grid-template-areas: 
   "header header header header"
   "main main main main"
-  "aside aside aside aside "
+  "aside aside aside aside"
   "footer footer footer footer"
   ;
   .section-redes{
@@ -58,20 +74,22 @@
   grid-template-areas: 
   "header header header header"
   "main main main main"
-  "aside aside aside aside "
+  "aside aside aside aside"
   "footer footer footer footer"
   ;
 }
 
 .grid-container-tutoriales{
-  display: grid;
+  display: flex;
+  margin: 0;
+  padding: 0;
   background-color: $color-primario3;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
   grid-template-areas: 
   "header header header header"
   "main main main main"
-  "aside aside aside aside "
+  "aside aside aside aside"
   "footer footer footer footer"
   ;
 }
@@ -83,7 +101,7 @@
   grid-template-areas: 
   "header header header header"
   "main main main main"
-  "aside aside aside aside "
+  "aside aside aside aside"
   "footer footer footer footer"
   ;
 }
@@ -96,9 +114,12 @@
   grid-template-areas: 
   "header header header header"
   "main main main main"
-  "aside aside aside aside "
+  "aside aside aside aside"
   "footer footer footer footer"
   ;
+  .clas-faq-title{
+    color: #054a29;
+  }
 }
 
 

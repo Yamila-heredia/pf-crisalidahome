@@ -15,10 +15,10 @@
 }
 
 * {
-  font-family: Afacad, sans-serif;
-  font-size: 18px;
   margin: 0;
   padding: 0;
+  font-family: Afacad, sans-serif;
+  font-size: 18px;
 }
 
 .googlefonts {
@@ -33,74 +33,94 @@
   font-family: "Libre Baskerville", serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Prompt", sans-serif;
+  font-family: "Edu NSW ACT Foundation", cursive;
 }
 
-.grid-container {
-  display: grid;
-  background-color: #D6F5CA;
+.grid-container main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #5fee22;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside " "footer footer footer footer";
+  grid-template-rows: 0.5fr 2fr 1fr 1.1fr;
+  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
+}
+.grid-container main .container-fluid {
+  text-align: center;
 }
 
 .grid-container-plantines {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   font-family: "Afacad, sans-serif";
   font-size: 18px;
-  background-color: #dad1f5;
+  background-color: #5fee22;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside " "footer footer footer footer";
+  grid-template-rows: 0.5fr 2fr 1fr 1.1fr;
+  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
+}
+.grid-container-plantines .container-fluid {
+  text-align: center;
 }
 .grid-container-plantines .section-redes {
-  background-color: #dad1f5;
+  background-color: #5fee22;
 }
 
 .grid-container-plantasinterior {
   display: grid;
   margin: 0;
   padding: 0;
-  background-color: #dad1f5;
+  background-color: #e6ccb2;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside " "footer footer footer footer";
+  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
 }
 .grid-container-plantasinterior .section-redes {
-  background-color: #dad1f5;
+  background-color: #e6ccb2;
 }
 
 .grid-container-quinta {
   display: grid;
   margin: 0;
   padding: 0;
-  background-color: #dad1f5;
+  background-color: #e6ccb2;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside " "footer footer footer footer";
+  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
 }
 
 .grid-container-tutoriales {
-  display: grid;
-  background-color: #dad1f5;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #e6ccb2;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside " "footer footer footer footer";
+  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
 }
 
 .grid-container-music {
   display: grid;
-  background-color: #dad1f5;
+  background-color: #e6ccb2;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside " "footer footer footer footer";
+  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
 }
 
 .grid-container-faq {
   display: grid;
-  background-color: #dad1f5;
+  background-color: #e6ccb2;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside " "footer footer footer footer";
+  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
+}
+.grid-container-faq .clas-faq-title {
+  color: #054a29;
 }
 
 header {
@@ -128,6 +148,11 @@ header {
   transform: translate(10px 20px);
   transition-duration: 5s;
   transition-delay: 1s;
+}
+
+.navegador-container .navbar-brand {
+  margin: 1px;
+  padding: auto;
 }
 
 .fondonav {
@@ -162,7 +187,7 @@ header nav ul li {
 }
 
 main {
-  grid-area: main;
+  grid-area: a;
 }
 
 .carousel-inner {
@@ -192,6 +217,7 @@ main {
   margin: 10px;
 }
 .video-principal-container .video-inicio {
+  margin-left: 15px;
   justify-content: center;
   flex: 1;
 }
@@ -202,6 +228,31 @@ main {
   padding-right: 10px;
   justify-content: center;
   text-align: center;
+}
+
+.plantines-contenedor1 {
+  display: flex;
+}
+
+.cont-img-tutoriales {
+  display: flex;
+  width: 100%;
+}
+
+.tutoriales-videos1 {
+  display: inline-block;
+}
+
+.tutoriales-videos2 {
+  display: inline-block;
+}
+
+.tutoriales-videos3 {
+  display: inline-block;
+}
+
+.tutoriales-videos4 {
+  display: inline-block;
 }
 
 .cont-img-music {
@@ -217,6 +268,27 @@ main {
   color: #fff;
   padding: 10px;
   padding-top: 10px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container-fluid {
+  text-align: center;
+}
+.container-fluid .clas-faq-title {
+  text-align: center;
+  margin: 0px;
+}
+.container-fluid .clas-faq-title .guion {
+  margin: 0 auto;
+  max-width: 5%;
+  height: auto;
+  text-align: center;
 }
 
 .faq-acordeon {
@@ -241,22 +313,29 @@ aside {
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: #5fee22;
 }
-
-.nuestros-productos {
+.carta-container .nuestros-productos {
+  font-family: "Afacad, sans-serif";
+  font-size: 25px;
   text-align: center;
 }
 
-.section-galeria-fotos {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-.section-galeria-fotos .galeria-fotos {
+.galeria-fotos {
   display: inline-block;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  margin: 8px;
+}
+
+.imagen {
+  display: inline-block;
+  transition: transform 1s ease;
+  justify-content: center;
+  margin: 1px;
+}
+
+.imagen:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -264,22 +343,31 @@ footer {
 }
 
 .section-redes {
-  background-color: #D6F5CA;
+  background-color: #5fee22;
+}
+
+.section-redes-inicio {
+  display: block;
+  background-color: #5fee22;
+}
+.section-redes-inicio .mapa {
+  width: 100%;
+  height: 10%;
 }
 
 .logo-redes-music {
-  background-color: #dad1f5;
-}
-
-.contactanos {
-  text-align: center;
-  font-family: "Libre Baskerville";
-  border-top: 1px ridge rgb(16, 107, 69);
-  background-color: #D6F5CA;
+  background-color: #e6ccb2;
 }
 
 .contactanos-container {
-  background-color: #D6F5CA;
+  background-color: #5fee22;
+}
+
+.contactanos {
+  background-color: #5fee22;
+  text-align: center;
+  font-family: "Libre Baskerville";
+  border-top: 1px ridge rgb(16, 107, 69);
 }
 
 .contactanos-container-productos {
