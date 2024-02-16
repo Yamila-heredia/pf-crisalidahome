@@ -6,19 +6,22 @@ aside{
                 display: flex;
                 justify-content: center;
                 width: 100%;
-                background-color: #5fee22;
+                background-color: $color-primario1;
     .nuestros-productos{
         font-family: $font-body;
         font-size: 25px;
         text-align: center;
     }
 }
-
-.galeria-fotos{
-    display: inline-block;
-    justify-content: center;
-    margin: 8px;
-} 
+.section-galeria-fotos{
+    background-color: $color-primario1;
+    .galeria-fotos{
+        display: inline-block;
+        justify-content: center;
+        margin: 8px;
+        box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.102);
+    } 
+}
 
 .imagen{
         display: inline-block;

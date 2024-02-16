@@ -43,7 +43,12 @@ main{
 //Main plantines
 
 .plantines-contenedor1{
-    display: flex;
+    display: inline-block;
+    .img{
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
  //Main tutoriales
@@ -94,6 +99,7 @@ main{
 .container-fluid{
    
     text-align: center;
+    margin-top: 20px;
 
     .clas-faq-title{
 
@@ -115,15 +121,23 @@ main{
 
 //main de quinta
 
-.section-tarjetas-huerta{
+.section-tarjeta-huerta{
+    display: inline-block;
+
+}
+
+.section-tarjetas{
     display: flex;
 
     .card{   
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
     margin-right: 5px;
+
 } 
 }
+
+
 
 
 

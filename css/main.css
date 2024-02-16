@@ -51,78 +51,6 @@
   text-align: center;
 }
 
-.grid-container-plantines {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  font-family: "Afacad, sans-serif";
-  font-size: 18px;
-  background-color: #5fee22;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.5fr 2fr 1fr 1.1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
-}
-.grid-container-plantines .container-fluid {
-  text-align: center;
-}
-.grid-container-plantines .section-redes {
-  background-color: #5fee22;
-}
-
-.grid-container-plantasinterior {
-  display: grid;
-  margin: 0;
-  padding: 0;
-  background-color: #e6ccb2;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
-}
-.grid-container-plantasinterior .section-redes {
-  background-color: #e6ccb2;
-}
-
-.grid-container-quinta {
-  display: grid;
-  margin: 0;
-  padding: 0;
-  background-color: #e6ccb2;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
-}
-
-.grid-container-tutoriales {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  background-color: #e6ccb2;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
-}
-
-.grid-container-music {
-  display: grid;
-  background-color: #e6ccb2;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
-}
-
-.grid-container-faq {
-  display: grid;
-  background-color: #e6ccb2;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0, 5fr 2fr 1fr 1, 1fr;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
-}
-.grid-container-faq .clas-faq-title {
-  color: #054a29;
-}
-
 header {
   grid-area: header;
 }
@@ -231,7 +159,11 @@ main {
 }
 
 .plantines-contenedor1 {
-  display: flex;
+  display: inline-block;
+}
+.plantines-contenedor1 .img {
+  width: 100px;
+  height: 100px;
 }
 
 .cont-img-tutoriales {
@@ -279,6 +211,7 @@ main {
 
 .container-fluid {
   text-align: center;
+  margin-top: 20px;
 }
 .container-fluid .clas-faq-title {
   text-align: center;
@@ -295,12 +228,16 @@ main {
   margin: 20px;
 }
 
-.section-tarjetas-huerta {
+.section-tarjeta-huerta {
+  display: inline-block;
+}
+
+.section-tarjetas {
   display: flex;
 }
-.section-tarjetas-huerta .card {
+.section-tarjetas .card {
   display: inline-block;
-  margin: 10px;
+  margin: 5px;
   margin-right: 5px;
 }
 
@@ -321,10 +258,14 @@ aside {
   text-align: center;
 }
 
-.galeria-fotos {
+.section-galeria-fotos {
+  background-color: #5fee22;
+}
+.section-galeria-fotos .galeria-fotos {
   display: inline-block;
   justify-content: center;
   margin: 8px;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.102);
 }
 
 .imagen {
@@ -345,41 +286,8 @@ footer {
 .section-redes {
   background-color: #5fee22;
 }
-
-.section-redes-inicio {
-  display: block;
-  background-color: #5fee22;
-}
-.section-redes-inicio .mapa {
-  width: 100%;
-  height: 10%;
-}
-
-.logo-redes-music {
-  background-color: #e6ccb2;
-}
-
-.contactanos-container {
-  background-color: #5fee22;
-}
-
-.contactanos {
-  background-color: #5fee22;
-  text-align: center;
-  font-family: "Libre Baskerville";
-  border-top: 1px ridge rgb(16, 107, 69);
-}
-
-.contactanos-container-productos {
-  background-color: hsl(204, 16%, 65%);
-  font-size: 40px;
-}
-
-.contactanos-container-music {
-  background-color: #dad1f5;
-}
-
-.logo-redes {
+.section-redes .logo-redes {
+  margin-bottom: 15px;
   justify-content: space-evenly;
   height: 13svh;
   display: flex;
@@ -387,87 +295,176 @@ footer {
   padding-top: 20px;
 }
 
+.contactanos-container {
+  max-width: 1500px;
+  background-color: #5fee22;
+  display: center;
+  text-align: center;
+}
+.contactanos-container .contactanos {
+  background-color: #5fee22;
+  text-align: center;
+  font-family: "Libre Baskerville";
+  border-top: 1px ridge rgb(16, 107, 69);
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .grid-container {
+    display: flex;
     background-color: #F2D7D5;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0, 5fr 2fr 1fr 1fr;
-    grid-template-areas: "header header " "main main " "aside aside " "footer footer ";
-  }
-  .video-texto {
-    padding: 3px;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 1fr;
+    grid-template-areas: "header header" "main main" "aside aside" "footer footer";
   }
-  .video-inicio {
+  .grid-container main {
+    flex: 1;
+    background-color: #F2D7D5;
+  }
+  .grid-container main .video-principal-container {
+    background-color: #F2D7D5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .grid-container main .video-principal-container .video-inicio {
+    background-color: #F2D7D5;
     display: flex;
     justify-content: center;
     flex: 1;
     max-width: 50%;
     max-height: auto;
   }
-  .video-principal-container {
-    display: flex;
+  .grid-container main .video-principal-container .video-texto {
+    padding: 3px;
     justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    background-color: #F2D7D5;
   }
-  .contactanos {
+  .grid-container main .section-galeria-fotos {
+    background-color: #5fee22;
+  }
+  .grid-container main .section-galeria-fotos .galeria-fotos {
+    display: inline-block;
+    justify-content: center;
+    margin: 8px;
+  }
+  .grid-container main .section-galeria-fotos .section-tarjeta-huerta {
+    display: inline-block;
+  }
+  .grid-container main .carta-container {
+    background-color: #F2D7D5;
+  }
+  .grid-container .footer {
+    display: inline-block;
+    background-color: #F2D7D5;
+  }
+  .grid-container .footer .contactanos-container {
+    display: flex;
     text-align: center;
     border-top: 1px ridge #963c3c;
     background-color: #F2D7D5;
   }
-  .contactanos .container {
-    background-color: #F2D7D5;
+  .grid-container .footer .contactanos-container .contactanos {
     display: flex;
+  }
+  .grid-container .footer .section-redes {
+    display: flex;
+    background-color: #F2D7D5;
+  }
+  .grid-container .footer .section-redes .logo-redes {
+    justify-content: space-evenly;
+    height: 13svh;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
   }
 }
-@media (min-width: 320px) and (max-width: 600px) {
-  .fondonav {
-    position: sticky;
-    top: 0;
-    background-color: #FDEDEC;
-    color: #000000;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 10vh;
-    padding-top: 2%;
-  }
-  .action {
-    display: none;
-  }
+@media (min-width: 768px) and (max-width: 1200px) and (min-width: 320px) and (max-width: 600px) {
   .grid-container {
     background-color: #F2D7D5;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0, 5fr 0, 2fr 0, 1fr 1fr;
-    grid-template-areas: "header header " "main main " "aside aside " "footer footer ";
+    grid-template-rows: 0.2fr 1fr 0.1fr 0.5fr;
+    grid-template-areas: "header header" "main main" "aside aside" "footer footer";
   }
-  .carrusel-conteiner {
+  .grid-container .navegador-container {
+    display: inline;
+  }
+  .grid-container main {
+    flex: 1;
+    background-color: #F2D7D5;
+  }
+  .grid-container main .promos-container {
+    display: none;
+  }
+  .grid-container main .video-principal-container {
+    width: 100%;
+    background-color: #F2D7D5;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
-  .bienvenidos-container {
-    padding-top: 5px;
-    justify-content: center;
-    text-align: center;
-  }
-  .video-principal-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .video-principal-container .video-inicio {
-    display: flex;
+  .grid-container main .video-principal-container .video-inicio {
+    overflow-y: auto;
+    background-color: #F2D7D5;
+    display: block;
     justify-content: center;
     flex: 1;
-    flex-wrap: wrap;
-    max-width: 100%;
-    max-height: 100vh;
+    max-width: 50%;
+    max-height: auto;
   }
-  .section-redes {
+  .grid-container main .video-principal-container .video-texto {
+    overflow-y: auto;
+    display: block;
+    padding: 3px;
+    justify-content: center;
+    text-align: center;
     background-color: #F2D7D5;
+  }
+  .grid-container main .section-galeria-fotos {
+    background-color: #5fee22;
+  }
+  .grid-container main .section-galeria-fotos .galeria-fotos {
+    display: inline-block;
+    justify-content: center;
+    margin: 8px;
+  }
+  .grid-container main .section-galeria-fotos .section-tarjeta-huerta {
+    display: inline-block;
+  }
+  .grid-container main .carta-container {
+    background-color: #F2D7D5;
+  }
+  .grid-container main .section-tarjeta-huerta {
+    display: inline-block;
+  }
+  .grid-container .footer {
+    display: inline-block;
+    background-color: #F2D7D5;
+  }
+  .grid-container .footer .contactanos-container {
+    display: flex;
+    text-align: center;
+    border-top: 1px ridge #963c3c;
+    background-color: #F2D7D5;
+  }
+  .grid-container .footer .contactanos-container .contactanos {
+    display: flex;
+  }
+  .grid-container .footer .section-redes {
+    display: flex;
+    background-color: #F2D7D5;
+  }
+  .grid-container .footer .section-redes .logo-redes {
+    justify-content: space-evenly;
+    height: 13svh;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
   }
 }
 

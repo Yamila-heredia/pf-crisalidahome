@@ -16,111 +16,12 @@
     .container-fluid{
       text-align: center;
     }
+  
   }
     
   
 
- .grid-container-plantines{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    font-family: $font-body;
-    font-size: 18px;
-    background-color: $color-primario1;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.5fr 2fr 1fr 1.1fr;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "aside aside aside aside"
-    "footer footer footer footer"
-    ;
-    .container-fluid{
-      text-align: center;
-    }
-    .section-redes{
-      background-color: $color-primario1;
-    }
-}
-
-.grid-container-plantasinterior{
-  display: grid;
-  margin: 0;
-  padding: 0;
-  background-color: $color-primario3;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
-  grid-template-areas: 
-  "header header header header"
-  "main main main main"
-  "aside aside aside aside"
-  "footer footer footer footer"
-  ;
-  .section-redes{
-    background-color: $color-primario3;
-  }
-  
-}
-
-.grid-container-quinta{
-  display: grid;
-  margin: 0;
-  padding: 0;
-  background-color: $color-primario3;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
-  grid-template-areas: 
-  "header header header header"
-  "main main main main"
-  "aside aside aside aside"
-  "footer footer footer footer"
-  ;
-}
-
-.grid-container-tutoriales{
-  display: flex;
-  margin: 0;
-  padding: 0;
-  background-color: $color-primario3;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
-  grid-template-areas: 
-  "header header header header"
-  "main main main main"
-  "aside aside aside aside"
-  "footer footer footer footer"
-  ;
-}
-.grid-container-music{
-  display: grid;
-  background-color: $color-primario3;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
-  grid-template-areas: 
-  "header header header header"
-  "main main main main"
-  "aside aside aside aside"
-  "footer footer footer footer"
-  ;
-}
-
-.grid-container-faq{
-  display: grid;
-  background-color: $color-primario3;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0,5fr 2fr 1fr 1,1fr;
-  grid-template-areas: 
-  "header header header header"
-  "main main main main"
-  "aside aside aside aside"
-  "footer footer footer footer"
-  ;
-  .clas-faq-title{
-    color: #054a29;
-  }
-}
+ 
 
 
 
